@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/discuss/889070/C%2B%2BPython-Bitmask-try-all-subset-of-cities-Clean-and-Concise-O(2n-*-n)
 // 2BFS Tree Diameter:  https://leetcode.com/problems/tree-diameter/discuss/418820/(Java)-Using-2-BFS
+// DFS Tree Diameter: https://leetcode.com/problems/tree-diameter/discuss/879442/C%2B%2B-DFS-using-a-parent-parameter-to-avoid-trivial-cycles
+// DFS: for any node max is largest + 2nd largest path. DFS will cover every case. So if we start from node 0, it still covered every case
 class Solution {
 public:
     vector<int> countSubgraphsForEachDiameter(int n, vector<vector<int>>& edges) {
