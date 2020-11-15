@@ -48,3 +48,8 @@ https://zxi.mytechroad.com/blog/tree/leetcode-968-binary-tree-cameras/
 
 # static_cast
 static_cast<int>(urls_.size())
+
+// unordered_map insert(something).second => it can used for check if something exist in unordered_set already
+// https://zxi.mytechroad.com/blog/searching/leetcode-1654-minimum-jumps-to-reach-home/
+// https://www.cplusplus.com/reference/unordered_set/unordered_set/insert/
+// EX: seen2.insert(cur - b).second
