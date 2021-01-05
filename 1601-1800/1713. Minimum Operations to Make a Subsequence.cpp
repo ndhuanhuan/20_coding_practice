@@ -1,4 +1,5 @@
 // https://zxi.mytechroad.com/blog/dynamic-programming/leetcode-1713-minimum-operations-to-make-a-subsequence/
+// https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/discuss/999392/C%2B%2B-O(n-log-n)
 class Solution {
 public:
   int minOperations(vector<int>& target, vector<int>& arr) {
