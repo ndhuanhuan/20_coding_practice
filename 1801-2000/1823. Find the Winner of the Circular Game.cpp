@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/find-the-winner-of-the-circular-game/discuss/1152585/O(n)-(no-stimulation)(onelinear)-py-The-classic-josephus-problem-with-explanation
 // https://leetcode.com/problems/find-the-winner-of-the-circular-game/discuss/1152617/Josephus-Problem(C%2B%2B)
 // https://zhuanlan.zhihu.com/p/114391147
+// https://www.pythonf.cn/read/81709
 class Solution {
 public:
     int solve(int n,int k)
