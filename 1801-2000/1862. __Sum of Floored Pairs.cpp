@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/sum-of-floored-pairs/discuss/1210025/Prefix-Sum-Fenwick-Tree-Sort-and-Sieve
+// https://leetcode.com/problems/sum-of-floored-pairs/discuss/1210073/C%2B%2B-Short-and-Easy-or-Frequency-Prefix-Sum-Solution-w-Explanation
 class Solution {
 public:
     int ps[100001] = {};
