@@ -12,6 +12,7 @@
 // 0001 =>a
 // (代码 1 << n )0010 
 // 0001 ^ 0010 = 0011 => ab
+// 也就是说找0001 和 0011 之间的wonderful string，可以知道这俩之间夹杂着cnt[mask ^ (1 << n)] 个 b为奇数，其它字母为偶数的candidates。
 // b 就是一个candidate。 
 // case 2 稍难理解
 class Solution {
