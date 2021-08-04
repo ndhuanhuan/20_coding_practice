@@ -1,3 +1,5 @@
+496. Next Greater Element I
+
 https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 768. Max Chunks To Make Sorted II: https://www.cnblogs.com/grandyang/p/8850299.html
 lc 1063
@@ -14,3 +16,5 @@ https://leetcode.com/problems/find-the-most-competitive-subsequence/discuss/9527
 https://leetcode.com/problems/maximum-subarray-min-product/discuss/1198782/C%2B%2B-O(N)-Time.-Next-Smaller-Element
 
 1944. Number of Visible People in a Queue
+
+1950. Maximum of Minimum Values in All Subarrays
