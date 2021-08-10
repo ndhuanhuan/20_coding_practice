@@ -1,2 +1,13 @@
 1960. Maximum Product of the Length of Two Palindromic Substrings
 // https://www.cxyxiaowu.com/2665.html#:~:text=%E9%A9%AC%E6%8B%89%E8%BD%A6%E7%AE%97%E6%B3%95%EF%BC%88%20Manacher,%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%8F%90%E5%8D%87%E5%88%B0%E4%BA%86%20%E7%BA%BF%E6%80%A7%20%E3%80%82
+
+https://nicodechal.github.io/2019/10/22/manacher-algorithm-explanation/
+
+
+
+https://www.pianshen.com/article/7717567600/
+容易知道：
+那么对于以T[i]为中心的最长回文字串，其长度就为2*P[i]-1,经过观察可知，T中所有的回文子串，其中分隔符的数量一定比其他字符的数量多1，也就是有P[i]个分隔符，剩下P[i]-1个字符来自原字符串，所以该回文串在原字符串中的长度就为P[i]-1
+
+难点是如何快速求解P[i]
+- mx 是回文串能延伸到的最右端的位置，需要注意的是，这个 mx 位置的字符不属于回文串
