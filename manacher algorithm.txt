@@ -3,7 +3,9 @@
 
 https://nicodechal.github.io/2019/10/22/manacher-algorithm-explanation/
 
-
+Great:
+https://www.cnblogs.com/grandyang/p/4475985.html
+https://www.zhihu.com/question/37289584/answer/370848679
 
 https://www.pianshen.com/article/7717567600/
 容易知道：
