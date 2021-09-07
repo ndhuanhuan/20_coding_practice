@@ -1,0 +1,2 @@
+// https://www.geeksforgeeks.org/sieve-of-eratosthenes/
+// https://leetcode.com/problems/gcd-sort-of-an-array/discuss/1445180/C%2B%2BPython-Union-Find-and-Sieve-and-Sorting-Clean-and-Concise
