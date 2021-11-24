@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/most-beautiful-item-for-each-query/discuss/1576065/C%2B%2B-Offline-Query
 class Solution {
 public:
     vector<int> maximumBeauty(vector<vector<int>>& A, vector<int>& Q) {
