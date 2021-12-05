@@ -1,0 +1,2 @@
+2097. Valid Arrangement of Pairs
+https://leetcode.com/problems/valid-arrangement-of-pairs/discuss/1611978/C%2B%2B-Eulerian-Path-with-Explanation
