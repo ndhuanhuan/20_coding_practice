@@ -35,6 +35,11 @@ public:
             if (m[u] != -1) return {u, m[u], false}; // this is the merge point
             m[u] = 0;
             auto [mergePoint, depth, mergePointMet] = dfs2(A[u]);
+            
+            // Most hard to understand part, use original post's 6->5->4->3->2->1 as example.
+            // 4->3->2->1 is a cycle, they won't goes into below if(mergePointMet) branch
+            // for 6->5, it is not part of cycle, but they need to return the best results anyway, so we set it to depth=0 and return the "acutal" depth of cycle althogh it does 
+            // not belong to it.
             if (mergePointMet) { // If we've met the merge point again already, this node is outside of the cycle and should be ignored.
                 m[u] = 0;
                 return {mergePoint, depth, true};
