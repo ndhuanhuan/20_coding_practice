@@ -23,3 +23,28 @@ public:
         return res;
     }
 };
+
+
+class Solution {
+public:
+    long long coutPairs(vector<int>& n, int k) {
+        long long res = 0;
+        unordered_map<int, int> m;
+
+        for (int i = 0; i < n.size(); ++i) {
+            int curGcd = gcd(k, n[i]);
+            for(auto kv: m) {
+                if((long long)curGcd * kv.first%k == 0) {
+                    res += kv.second;
+                }
+            }
+            
+            if(m.count(curGcd)) {
+                m[curGcd] += 1;
+            } else {
+                m[curGcd] = 1;
+            }
+        }
+        return res;
+    }
+};
