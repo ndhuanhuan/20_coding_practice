@@ -26,3 +26,4 @@ public:
         return res;
     }
 };
+// https://leetcode.com/problems/construct-string-with-repeat-limit/discuss/1784775/Easy-understanding-C%2B%2B-code-with-comments
