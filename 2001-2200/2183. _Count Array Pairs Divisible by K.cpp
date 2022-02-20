@@ -25,6 +25,7 @@ public:
 };
 
 
+// Convert Java code to cpp
 class Solution {
 public:
     long long coutPairs(vector<int>& n, int k) {
