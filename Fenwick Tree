@@ -1,8 +1,15 @@
+Patterns:
+If there are bunch of discrete numbers/large numbers, we need to do compression. 
+Using a rank unordered_map, key is the acutal num, value is ranking.
+This is very common pattern for comparing numbers.
+
+
 https://leetcode.com/tag/binary-indexed-tree
 
 307 => Fenwick Tree Stores actual value
 315 => Fenwick Tree Stores Frequency 
 
+493 => Fenwick Tree Stores Frequency (classic, use rank to compress)
 1409. Queries on a Permutation With Key
 1505. Minimum Possible Integer After at Most K Adjacent Swaps On Digits
 https://zxi.mytechroad.com/blog/greedy/leetcode-1505-minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/
