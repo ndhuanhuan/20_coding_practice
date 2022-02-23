@@ -21,9 +21,9 @@ public:
             long prefix = sorted[i].first; if(prefix>=lower&&prefix<=upper) count++;
             long hi = prefix - lower;
             long lo = prefix - upper;
-            while( U < n && sorted[U].first <= hi ) add( sorted[U++].second,  1 );
-            while( L < n && sorted[L].first <  lo ) add( sorted[L++].second, -1 );
-            sum( sorted[i].second-1, count );
+            while( U < n && sorted[U].first <= hi ) add( sorted[U++].second,  1 ); // add every prefix <= hi, can include invalid ones which will be removed by next while loop
+            while( L < n && sorted[L].first <  lo ) add( sorted[L++].second, -1 ); // remove those prefix  < lo, since they are invalid
+            sum( sorted[i].second-1, count ); // only sum those index smaller than current index, previous 2 while loop may include those indexes larger than current index, so they are ignored.
         }
         return count;
     }
