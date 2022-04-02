@@ -1,3 +1,5 @@
+// https://www.bilibili.com/video/BV1Pa4y147Qn?spm_id_from=333.337.search-card.all.click
+// https://www.scaler.com/topics/data-structures/z-algorithm/
 // https://leetcode.com/problems/sum-of-scores-of-built-strings/discuss/1907066/C%2B%2B-or-Z-Function-or-Resources-to-learn
 class Solution
 {
