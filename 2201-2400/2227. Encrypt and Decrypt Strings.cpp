@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/encrypt-and-decrypt-strings/discuss/1909025/JavaC%2B%2BPython-Two-Hashmaps-with-Explanation
 class Encrypter {
 public:
     unordered_map<char, string> enc;
