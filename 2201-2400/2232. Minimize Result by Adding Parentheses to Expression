@@ -1,0 +1,49 @@
+class Solution {
+public:
+    string minimizeResult(string expression) {
+        int plusIndex =expression.find('+');
+        string firstNum = expression.substr(0, plusIndex);
+        string secondNum = expression.substr(plusIndex + 1);
+        int len1 = firstNum.size();
+        int len2 = secondNum.size();
+        
+        long long res = LLONG_MAX;
+        string ans = "";
+        
+        for(int i = 0; i < len1; ++i) {
+            for(int j = 1; j <= len2; ++j) {
+                string num1 = (i == 0) ? "1": firstNum.substr(0, i);
+                string num2 = (i == 0) ? firstNum: firstNum.substr(i, len1+1);
+                // cout << "num1 " << num1 << endl;
+                // cout << "num2 " << num2 << endl;
+                
+                string num3 = (j == len2) ? secondNum: secondNum.substr(0, j);
+                string num4 = (j == len2) ? "1": secondNum.substr(j);
+                // cout << "num3 " << num3 << endl;
+                // cout << "num4 " << num4 << endl;
+                
+                long long cur = stoi(num1) * stoi(num4) * (stoi(num2) + stoi(num3));
+                if(cur < res) {
+                    res = cur;
+                    ans = "";
+                    if(i == 0) {
+                        ans = "(" + num2 + "+";
+                    } else {
+                        ans = num1 + "(" + num2 + "+";
+                    }
+                    
+                    if(j == len2) {
+                        ans += (num3 + ")");
+                    } else {
+                        ans += (num3 + ")" + num4);
+                    }
+                    
+                    
+                }
+                
+            }
+        }
+        
+        return ans;
+    }
+};
