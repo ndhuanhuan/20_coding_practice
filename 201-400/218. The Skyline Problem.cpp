@@ -1,6 +1,6 @@
 // classic sweep line
 // sort from x from small to large
-// 
+// Process "Entering" first
 // for "Entering" we need to process higher/taller one first
 // for "leaving" we need to process lower one first For example, -1, -5, -10. Last processed one is -10. And after removing abs(-10)
 // there is still a valid height, then it is another building's entering line, which should be added to answer (AKA second tallest one in huahua's video)
