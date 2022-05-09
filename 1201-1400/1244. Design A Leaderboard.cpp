@@ -1,3 +1,38 @@
+// clearer version
+class Leaderboard {
+public:
+    Leaderboard() {
+        
+    }
+    
+    void addScore(int playerId, int score) {
+        set.erase({scores[playerId], playerId});
+        scores[playerId] += score;
+        set.insert({scores[playerId], playerId});
+    }
+    
+    int top(int K) {
+        int sum = 0;
+        int count = 0;
+        // Traverse from big to small
+        for (auto it = set.rbegin(); it != set.rend() && count < K; it++) {
+            count++;
+            sum += it->first;
+        }
+        return sum;
+    }
+    
+    void reset(int playerId) {
+        set.erase({scores[playerId], playerId});
+        scores[playerId] = 0;
+    }
+
+private:
+    unordered_map<int, int> scores;
+    set<pair<int, int>> set;  // <score, player id>
+};
+
+
 class Leaderboard {
 public:
     
