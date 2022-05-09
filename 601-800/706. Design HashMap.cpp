@@ -1,4 +1,3 @@
-// https://leetcode.com/problems/design-hashmap/discuss/161483/C%2B%2B-solution-using-vector-of-lists
 class MyHashMap {
     vector<list<pair<int,int>>> m_data;
     size_t m_size = 10000;
@@ -36,10 +35,17 @@ public:
     
     /** Removes the mapping of the specified value key if this map contains a mapping for the key */
     void remove(int key) {
-        auto& pairs = m[key%s];
-        for(auto i=pairs.begin(); i!= pairs.end(); i++)
+        auto &list = m_data[key%m_size];
+        for(auto it=list.begin(); it!= list.end(); ++it)
         {
-            if(i->first==key) { pairs.erase(i); return; }
+            if(it->first==key) { list.erase(it); return; }
         }
     }
 };
+/**
+ * Your MyHashMap object will be instantiated and called as such:
+ * MyHashMap* obj = new MyHashMap();
+ * obj->put(key,value);
+ * int param_2 = obj->get(key);
+ * obj->remove(key);
+ */
