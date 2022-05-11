@@ -15,6 +15,13 @@ public:
         while (l < r) {
             const int m1 = l + (r - l) / 2;
             const int m2 = k - m1;
+            
+            // Most Tricky line => boundary problem
+            // we actually compared "m1+1" total nums1 elements with m2 total num2 elements
+            // the total equals to k+1 elements
+            // Why?
+            // the m1 index element actually will not be used in final results,
+            // but we want to push this boundary to left most
             if (nums1[m1] < nums2[m2 - 1])
                 l = m1 + 1;
             else
