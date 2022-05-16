@@ -1,0 +1,5 @@
+// Code
+// https://www.geeksforgeeks.org/reservoir-sampling/
+
+// Proof
+// https://florian.github.io/reservoir-sampling/
