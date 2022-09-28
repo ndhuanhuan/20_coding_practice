@@ -3,3 +3,4 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 
 
 ## 博弈类
+- [292. Nim Game](https://leetcode.com/problems/nim-game/)
