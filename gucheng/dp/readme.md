@@ -7,3 +7,6 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 - [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/)
 - [1025. Divisor Game](https://leetcode.com/problems/divisor-game/)
 - [877. Stone Game](https://leetcode.com/problems/stone-game/)
+- [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/)
+- [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/)
+- [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/)
