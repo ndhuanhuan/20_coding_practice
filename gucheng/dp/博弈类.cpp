@@ -13,3 +13,24 @@ public:
         return dp[n];
     }
 };
+
+// 486. Predict the Winner
+class Solution {
+public:
+    vector<vector<int>> memo;
+    bool PredictTheWinner(vector<int>& nums) {
+        const int n = nums.size();
+        memo = vector<vector<int>>(n, vector<int>(n, INT_MIN));
+        int res = dfs(nums, 0, n -1);
+        return res >= 0;
+    }
+    // Max diff (my_score - op_score) of subarray nums[l] ~ nums[r].
+    int dfs(vector<int>& nums, int l, int r) {
+        if(l > r) return 0;
+        if(memo[l][r] != INT_MIN) return memo[l][r];
+        
+        memo[l][r] = max(nums[l] - dfs(nums, l + 1, r), nums[r] - dfs(nums, l, r - 1));
+        
+        return memo[l][r];
+    }
+};
