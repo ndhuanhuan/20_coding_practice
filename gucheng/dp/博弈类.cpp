@@ -34,3 +34,28 @@ public:
         return memo[l][r];
     }
 };
+
+// 1025. Divisor Game
+class Solution {
+public:
+    
+    vector<int> memo;
+    bool divisorGame(int n) {
+        memo = vector<int>(n+1, -1);
+        return dfs(n);
+    }
+    
+    bool dfs(int n) {
+        if(n == 1) return false;
+        if(memo[n] != -1) return memo[n];
+        bool canWin = false;
+        for(int i = 1; i <= n/2; i++) {
+            if(n % i == 0 && !dfs(n-i)) {
+                canWin = true;
+                break;
+            }
+        }
+        
+        return memo[n] = canWin;
+    }
+};
