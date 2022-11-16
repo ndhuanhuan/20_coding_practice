@@ -59,3 +59,29 @@ public:
         return memo[n] = canWin;
     }
 };
+
+// 877. Stone Game
+class Solution {
+public:
+    vector<vector<int>> memo;
+    
+    bool stoneGame(vector<int>& piles) {
+        const int n = piles.size();
+        
+        memo = vector<vector<int>>(n, vector<int>(n, INT_MIN));
+        
+        int res = dfs(piles, 0, n - 1);
+        return memo[0][n-1] > 0;
+    }
+    
+    
+    int dfs(vector<int>& piles, int i, int j) {
+        if(i > j) return 0;
+        if(memo[i][j] != INT_MIN) return memo[i][j];
+        
+        memo[i][j] = max(piles[i] - dfs(piles, i+1, j), piles[j] - dfs(piles, i, j - 1));
+        
+        return memo[i][j];
+    }
+    
+};
