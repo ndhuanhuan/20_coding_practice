@@ -124,3 +124,34 @@ public:
         return helper(piles,memo,sum,0,1);
     }
 };
+
+// 1406. Stone Game III
+class Solution {
+public:
+    vector<int> memo;
+    string stoneGameIII(vector<int>& stoneValue) {
+        const int n = stoneValue.size();
+        memo = vector<int>(n, INT_MIN);
+        
+        int score = dfs(stoneValue, 0);
+        
+        if(score == 0) return "Tie";
+        return score > 0 ? "Alice" : "Bob";
+    }
+    
+    int dfs(vector<int>& stoneValue, int cur) {
+        if(cur == stoneValue.size()) return 0;
+        if(memo[cur] != INT_MIN) return memo[cur];
+        
+        int res = INT_MIN;
+        int score = 0;
+        
+        for(int i = cur; i < cur + 3 && i < (int)stoneValue.size(); ++i) {
+            score += stoneValue[i];
+            res = max(res, score - dfs(stoneValue, i + 1));
+        }
+        
+        return memo[cur] = res;
+    }
+};
+
