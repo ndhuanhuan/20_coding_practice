@@ -155,3 +155,23 @@ public:
     }
 };
 
+// 1510. Stone Game IV
+class Solution {
+public:
+    vector<int> memo;
+    bool winnerSquareGame(int n) {
+        memo = vector<int>(n+1, -1);
+        return dfs(n);
+    }
+    
+    bool dfs(int n) {
+        if(memo[n] != -1) return memo[n];
+        
+        for(int i = sqrt(n); i >=1; i--) {
+            if(!dfs(n - i*i))
+                return memo[n] = 1;
+        }
+        
+        return memo[n] = 0;
+    }
+};
