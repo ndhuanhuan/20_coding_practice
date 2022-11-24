@@ -43,3 +43,27 @@ private:
         return num >= 10 && num <= 26;
     }
 };
+
+// 91. Decode Ways gucheng version
+class Solution {
+public:
+    int numDecodings(string s) {
+        const int n = s.size();
+        if(n == 0) return 0;
+        vector<int> dp(n + 1);
+        dp[0] = 1;
+        dp[1] = s[0] == '0' ? 0 : 1;
+        for (int i = 2; i <= n; ++i) {
+            if (isValid(s[i-1])) dp[i] = dp[i-1];
+            if (isValid(s[i-2], s[i-1])) dp[i] += dp[i-2];
+        }
+        
+        return dp[n];
+    }
+private:
+    bool isValid(const char c) { return c != '0'; }
+    bool isValid(const char c1, const char c2) { 
+        const int num = (c1 - '0')*10 + (c2 - '0');
+        return num >= 10 && num <= 26;
+    }
+};
