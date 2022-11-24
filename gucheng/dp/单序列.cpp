@@ -67,3 +67,32 @@ private:
         return num >= 10 && num <= 26;
     }
 };
+
+// 139. Word Break
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& wordDict) {
+        unordered_set<string> dict(wordDict.begin(), wordDict.end());
+        return helper(s, dict);
+    }
+    
+    bool helper(string s, unordered_set<string>& dict) {
+        if(m.count(s)) return m[s];
+        if(dict.count(s)) {
+            m[s] = true;
+            return true;
+        }
+        
+        for(int i = 1; i < s.size(); ++i) {
+            const string left = s.substr(0, i);
+            const string right = s.substr(i);
+            
+            if(dict.count(right) && helper(left, dict))
+                return m[s]=true;
+        }
+        return m[s]=false;
+    }
+
+private:
+    unordered_map<string, bool> m;
+};
