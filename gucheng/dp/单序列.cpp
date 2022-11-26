@@ -96,3 +96,46 @@ public:
 private:
     unordered_map<string, bool> m;
 };
+
+// 140. Word Break II
+class Solution {
+public:
+    vector<string> wordBreak(string s, vector<string>& wordDict) {
+        unordered_set<string> dict(wordDict.begin(), wordDict.end());
+        return helper(s, dict);
+    }
+
+private:
+    
+    vector<string> append(vector<string> left, string right) {
+        vector<string> ans;
+        for(auto s: left) {
+            ans.push_back(s + " " + right);
+        }
+        
+        return ans;
+    }
+    
+    vector<string> helper(string s, unordered_set<string>& dict) {
+        if(mem_.count(s)) return mem_[s];
+        
+        vector<string> ans;
+        if(dict.count(s)) ans.push_back(s);
+        
+        for(int j = 1; j < s.size(); ++j) {
+            const string& right = s.substr(j);
+            if(!dict.count(right)) continue;
+            
+            const string& left= s.substr(0, j);
+            vector<string> left_ans = append(helper(left, dict), right);
+            ans.insert(ans.end(), left_ans.begin(), left_ans.end());
+        }
+        
+        //mem_[s].swap(ans);
+        mem_[s] = ans;
+        // ans.clear();
+        return mem_[s];
+    }
+
+    unordered_map<string, vector<string>> mem_;
+};
