@@ -155,3 +155,21 @@ public:
         return res;
     }
 };
+
+// 152. Maximum Product Subarray
+class Solution {
+public:
+  int maxProduct(vector<int>& nums) {   
+    int ans = nums[0];
+     
+     int h = ans, l = ans;
+    for (int i = 1; i < nums.size(); ++i) {
+      int last_l = l;
+      int last_h = h;
+      l = min({nums[i], nums[i] * last_l, nums[i] * last_h});
+      h = max({nums[i], nums[i] * last_l, nums[i] * last_h});
+      ans = max(ans, h);
+    }
+    return ans;
+  }
+};
