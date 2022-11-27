@@ -21,3 +21,4 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 - [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [198. House Robber](https://leetcode.com/problems/house-robber/)
 - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+- [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
