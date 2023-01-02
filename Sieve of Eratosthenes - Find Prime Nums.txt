@@ -1,2 +1,10 @@
 // https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 // https://leetcode.com/problems/gcd-sort-of-an-array/discuss/1445180/C%2B%2BPython-Union-Find-and-Sieve-and-Sorting-Clean-and-Concise
+
+
+
+https://leetcode.com/problems/closest-prime-numbers-in-range/
+https://zxi.mytechroad.com/blog/uncategorized/leetcode-2523-closest-prime-numbers-in-range-ep407/
+
+
+https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/
