@@ -24,3 +24,4 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 - [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [1713. Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/)
 - Must learn 300, 1713
+![image](https://github.com/ndhuanhuan/20_coding_practice/assets/3341457/2eb8dc46-640e-433b-96ff-92abae549705)
