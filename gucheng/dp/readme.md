@@ -23,3 +23,4 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 - [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [1713. Minimum Operations to Make a Subsequence](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/)
+- Must learn 300, 1713
