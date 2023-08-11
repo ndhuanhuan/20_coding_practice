@@ -29,3 +29,5 @@ https://www.youtube.com/watch?v=6D-SK_Ix5u0&list=PLbaIOC0vpjNW9f04lmGAwVC-856a6y
 ## 双序列(上)
 ![image](https://github.com/ndhuanhuan/20_coding_practice/assets/3341457/f7156c5b-788c-4340-85eb-b2212501dfff)
 ![image](https://github.com/ndhuanhuan/20_coding_practice/assets/3341457/cf24a5d6-1cf0-4b3e-9bb2-1cbc0a9466c1)
+
+- [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
