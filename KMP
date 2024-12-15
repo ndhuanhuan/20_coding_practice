@@ -5,3 +5,6 @@ LeetCode 28. strStr()
 
 i 永远只是+1
 j 是跳转
+
+3388. Count Beautiful Splits in an Array (Z 数组（扩展 KMP）)
+https://leetcode.cn/problems/count-beautiful-splits-in-an-array/solutions/3020939/liang-chong-fang-fa-lcp-shu-zu-z-shu-zu-dwbrd/
