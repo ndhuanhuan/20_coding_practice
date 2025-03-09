@@ -1,2 +1,6 @@
 2286. Booking Concert Tickets in Groups
 https://leetcode.com/problems/booking-concert-tickets-in-groups/
+
+3479. Fruits Into Baskets III
+https://leetcode.com/problems/fruits-into-baskets-iii/description/
+https://leetcode.cn/problems/fruits-into-baskets-iii/solutions/3603049/xian-duan-shu-er-fen-pythonjavacgo-by-en-ssqf/
