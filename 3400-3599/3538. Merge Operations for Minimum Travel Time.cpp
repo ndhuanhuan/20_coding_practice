@@ -1,4 +1,8 @@
 // https://leetcode.cn/problems/merge-operations-for-minimum-travel-time/solutions/3668454/hua-fen-xing-dpcong-ji-yi-hua-sou-suo-da-cref/
+// (position[nxt] - position[i]) * t; 的理解
+// (position[nxt] - position[i]) 这是由于下一段的长度也可以合并，所以这个长度不是(position[i+1] - position[i]). 然后这一段长度的每公里时间受到上一段合并的影响。
+// 上一段的影响是t
+
 class Solution {
 public:
     int minTravelTime(int l, int n, int k, vector<int>& position, vector<int>& time) {
